@@ -8,14 +8,14 @@ import java.util.StringTokenizer;
 
 public class C01InputOutput {
     public static void main(String[] args) throws IOException {
-        // 출력 sistem.out을 통해 콘솔풀렷
-        System.out.println(20);// sout 탄축어 사용 가능
+//        // 출력 System.out을 통해 콘솔풀렷
+//        System.out.println(20);// sout 단축어 사용 가능
         System.out.print("hello world");
         System.out.print("hello world2");
-
-//      입력 : System.in(키보드 입력) + Scanner 활용
-        int a = 10; //10이라는 숫자를 변수명 a에 할당
 //
+////      입력 : System.in(키보드 입력) + Scanner 활용
+//        int a = 10; //10이라는 숫자를 변수명 a에 할당
+////
 
         Scanner myScanner =new Scanner(System.in);
         String inputline1 = myScanner.nextLine();
@@ -35,7 +35,7 @@ public class C01InputOutput {
         System.out.println(input2[2]);
 
         String input3 = br.readLine();
-        // StringTokenizer를 통해 공백을 기준으로 문자열을 하나씩 잘라서 담음
+//        // StringTokenizer를 통해 공백을 기준으로 문자열을 하나씩 잘라서 담음
         StringTokenizer st = new StringTokenizer(input3);
         System.out.println(st.nextToken());
         System.out.println(st.nextToken());
