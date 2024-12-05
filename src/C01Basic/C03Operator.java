@@ -2,7 +2,7 @@ package C01Basic;
 
 public class C03Operator {
     public static void main(String[] args) {
-////        산술연산자 : 사칙연사
+////        산술연산자 : 사칙연산
 //        int n1=8;
 //        int n2=3;
 ////        *:곱셈, /:나눗셈(몫), %:나머지
@@ -36,8 +36,8 @@ public class C03Operator {
 //        System.out.println(a); // 11
 //        a += 1;
 //        System.out.println(a); // 12
-//        a++;// 13 후위증감연산자
-//        ++a;// 14 전위증감연산자
+//        ++a;// 13 전위증감연산자
+//        a++;// 14 후위증감연산자
 //        System.out.println(a);
 //
 //        int b =5;
@@ -63,20 +63,20 @@ public class C03Operator {
 //        boolean result2 = !(num2<=10 || num2>=30);
 //        System.out.println(result2);
 //
-//        비트연산자 : 컴푸터의 연산방식. &, |, ^, ~, <<, >>
-        int n1=5;
-        int n2=4;
-        int n3=n1&n2;
-        System.out.println(n3);
-        int n4=n1|n2;
-        System.out.println(n4);
-        int n5=n1^n2;
-        System.out.println(n5);
-        int n6=~n5;
-        System.out.println(n6);
-//        왼쪽으로 1칸 옮긴다는 의미는 X2한다는 의미
-//        오른쪽으로 1칸 옮긴다는 의미는 /2 한다는 의미
-        System.out.println(n1<<1);
+////        비트연산자 : 컴푸터의 연산방식. &, |, ^, ~, <<, >>
+//        int n1=5;
+//        int n2=4;
+//        int n3=n1&n2;
+//        System.out.println(n3);
+//        int n4=n1|n2;
+//        System.out.println(n4);
+//        int n5=n1^n2;
+//        System.out.println(n5);
+//        int n6=~n5;
+//        System.out.println(n6);
+////        왼쪽으로 1칸 옮긴다는 의미는 X2한다는 의미
+////        오른쪽으로 1칸 옮긴다는 의미는 /2 한다는 의미
+//        System.out.println(n1>>1);
 
 
 
