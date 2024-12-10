@@ -16,6 +16,7 @@ public class C06String {
 //        int c = b;
 ////        오토 박싱 : 기본자료형 -> WrapperClass 형변환
 //        Integer d = a;
+//        System.out.println(c);
 //
 ////        String과 int의 형변환
 //        int a =10;
@@ -28,7 +29,7 @@ public class C06String {
 ////        배열에는 원시타입 자료형 세팅
 //        int[] arr1 = {10,20,30};
 ////        리스트에는 참조자료형 세팅
-////        참조자료형에 원시자료혀을 담을때는 Wrapper클래스로 써야함
+////        참조자료형에 원시자료형을 담을때는 Wrapper클래스로 써야함
 //        List<Integer> list1 = new ArrayList<>();
 //        list1.add(10);
 //        list1.add(20);
@@ -288,8 +289,8 @@ public class C06String {
 //            }
 //        }
 //        System.out.println(answer);
-
-
-
+//
+//
+//
         }
     }

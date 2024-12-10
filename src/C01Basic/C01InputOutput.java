@@ -10,20 +10,20 @@ public class C01InputOutput {
     public static void main(String[] args) throws IOException {
 //        // 출력 System.out을 통해 콘솔풀렷
 //        System.out.println(20);// sout 단축어 사용 가능
-        System.out.print("hello world");
-        System.out.print("hello world2");
+//        System.out.print("hello world");
+//        System.out.print("hello world2");
 //
 ////      입력 : System.in(키보드 입력) + Scanner 활용
 //        int a = 10; //10이라는 숫자를 변수명 a에 할당
 ////
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Scanner myScanner =new Scanner(System.in);
-        String inputline1 = myScanner.nextLine();
-        String inputline2 = myScanner.nextLine();
-        int count = myScanner.nextInt();
-        System.out.println("입력사항1 = " + inputline1);
-        System.out.println("입력사항2 = " + inputline2);
-        System.out.println("입력사항3 = " + count);
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        Scanner myScanner =new Scanner(System.in);
+//        String inputline1 = myScanner.nextLine();
+//        String inputline2 = myScanner.nextLine();
+//        int count = myScanner.nextInt();
+//        System.out.println("입력사항1 = " + inputline1);
+//        System.out.println("입력사항2 = " + inputline2);
+//        System.out.println("입력사항3 = " + count);
 //       입력 : System.in + BufferedReader
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        String input1 = br.readLine();

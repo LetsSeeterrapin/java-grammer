@@ -102,7 +102,7 @@ public class C07Array {
 //        }
 //        System.out.println(Arrays.toString(newArr));
 //
-//        배열의 정렬
+////        배열의 정렬
 //        int[] arr = {17,12,20,10,25};
 //        Arrays.sort(arr);
 //        System.out.println(Arrays.toString(arr));
@@ -141,21 +141,147 @@ public class C07Array {
 //        int[] arr = {5,1,2,3,6};
 ////        Integer[] arr2 = new Integer[arr.length];
 //        Arrays.sort(arr);
+//
+////        K번째수 프로그래머스
+//        int[] arr = {1, 5, 2, 6, 3, 7, 4};
+//        int[] arr2 = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
+//        int[] answer = new int[arr2.length];
+//        for (int i = arr2[0]; i >= arr2[0] && i <= arr2[1]; i++) {
+//            int[] temp = new int[arr2[i][1]]-arr2[i][0]+1;
+//
+//            System.out.println(Arrays.toString(arr));
+//
+//        }
 
-//        K번째수 프로그래머스
-        int[] arr = {1, 5, 2, 6, 3, 7, 4};
+//        숫자조합의 합
+////        모두 각기다른 숫자의 배열이 있을때, 만들어질수 있는 2개의 조합의 합을 출력
+//        int[] intArr = {10, 20, 30, 40, 50, 60};
+//        int[] arr1 = new int[intArr.length * intArr.length];
+//        int index=0;
+//        for(int i = 0; i < intArr.length; i++ ){
+//            for(int j=i+1; j < intArr.length; j++){
+//                arr1[index] = intArr[i]+intArr[j];
+//                index++;
+//            }
+//        }
+//        System.out.println(Arrays.toString(arr1));
+//        int[] arr2 = new int[index];
+//        for(int i = 0; i < index; i++) {
+//            arr2[i] = arr1[i];
+//        }
+//        Arrays.sort(arr2);  //정렬
+//        System.out.println(Arrays.toString(arr2));
+//// 중복제거
+//        int[] arr3 = new int[arr2.length];
+//        int count = 0;
+//        for(int i = 0; i < arr2.length; i++) {
+//            if(i==arr2.length-1 || arr2[i] != arr2[i+1]){
+//                arr3[count] = arr2[i];
+//                count++;
+//            }
+//        }
+//        System.out.println(Arrays.toString(arr3));
+//
+////      배열의 복사
+////        Arrays.copyOf(배열명, length), copyOfRange(배열명, start, end)
+//            int[] answer1 = Arrays.copyOf(arr3. count);
+//            int[] answer2 = Arrays.copyOfRange(arr3,0, count);
+//
+////            두 개 뽑아서 더하기 - 프로그래머스
+//        int[] intArr = {2,1,3,4,1};
+//        int[] arr1 = new int[intArr.length * intArr.length];
+//        int index = 0;
+//        for(int i=0;i<intArr.length;i++){
+//            for(int j=i+1;j<intArr.length;j++){
+//            arr1[index] = intArr[i]+intArr[j];
+//            index++;
+//            }
+//        }
+//        int[] arr2 = new int[index];
+//        for(int i = 0; i < index; i++) {
+//            arr2[i] = arr1[i];
+//        }
+//        System.out.println(Arrays.toString(arr1));
+//        Arrays.sort(arr1);
+//        int[] arr3 = new int[arr1.length];
+//        int count = 0;
+//        for(int i=0;i<arr1.length;i++){
+//            if(i == arr1.length-1 || arr1[i] != arr1[i+1]){
+//                arr3[count] = arr1[i];
+//            }
+//        }
+//        System.out.println(Arrays.toString(arr3));
+////        배열의 검색
+//        int[] arr = {5, 3, 1, 8, 7};
+//        int target = 8;
+//
+//
+//
+////      이진검색(binary search) - 이분탐색
+////        사전에 오름차순정렬이 되어있어야 이진 검색 가능
+//        int[] arr = {1,3,6,8,9,11,15};
+//        System.out.println(Arrays.binarySearch(arr, 15));
+//
+////        배열간 비교
+//        int[] arr1 = {10,20,30};
+//        int[] arr2 = {10,20,30};
+//        System.out.println(arr1 == arr2);
+////        Arrays.equals : 값과 순서까지 동일해야 true
+//        System.out.println(Arrays.equals(arr1, arr2));
+//
+////        2차원 배열의 선언과 할당
+//        int[][] arr1 = new int [2][3];
+//        arr1[0][0] = 10;
+//        arr1[0][1] = 20;
+//        arr1[0][2] = 30;
+//        arr1[0][2] = 40;
+//        arr1[1][1] = 50;
+//        arr1[1][2] = 60;
+//        int[][] arr2 = {{10,20,30}, {40,50,60}};
+//
+////        가변배열 선언 후 할당.
+//        int[][] arr1 = new int[2][];
+//        arr1[0] = new int[2];
+//        arr1[1] = new int[3];
+//        arr1[0][0] = 10;
+//        arr1[0][1] = 20;
+//        arr1[1][0] = 30;
+//        arr1[1][1] = 40;
+////        arr1[1][2] = 50;
+//        System.out.println(Arrays.deepToString(arr1));
+////        가변배열 리터럴 방식
+//        int [][]arr2 = {{10,20}, {30,40,50}};
 
-        int[] answer
-        for (int i = arr2[0]; i >= arr2[0] && i <= arr2[1]; i++) {
-            int[] arr2 = {2, 5, 3};
-            int[] temp = new int[arr2[i][]];
-
-            System.out.println(Arrays.toString(arr));
-
+//        [3][4] 사이즈 배열 선언하고
+//        1~12까지 숫자값을 각 배열네 순차적으로 할당
+//        {1,2,3,4}{5,6,7,8}.....
+//        int[][] arr = new int[3][];
+//        int num = 1;
+//        for(int i = 0; i<arr.length; i++){
+//            arr[i] = new int[4];
+//            for(int j = 0; j<arr[i].length; j++){
+//                arr[i][j] = num;
+//                num++;
+//            }
+//        }
+//        행렬의 덧셈 프로그래머스
+        int[][] arr1 = new int[2][2];
+        int[][] arr2 = new int[2][2];
+        arr1[0][0] = 1;
+        arr1[0][1] = 2;
+        arr1[1][0] = 2;
+        arr1[1][1] = 3;
+        arr2[0][0] = 3;
+        arr2[0][1] = 4;
+        arr2[1][0] = 5;
+        arr2[1][1] = 6;
+        int[][] answer = new int[2][2];
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr1[i].length; j++) {
+                answer[i][j] = arr1[i][j] + arr2[i][j];
+            }
         }
-
-
-
+        System.out.println(Arrays.deepToString(answer));
 
 
     }

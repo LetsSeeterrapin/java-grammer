@@ -15,7 +15,7 @@ public class C04IfStatements {
 //            System.out.println("비밀번호가틀렸습니다");
 //        }
 //
-//        버스카드 예제
+////        버스카드 예제
 //        System.out.println("현재가지고계신돈은 얼마인가요?");
 //        Scanner sc = new Scanner(System.in);
 //        int myMoney = sc.nextInt();
@@ -65,26 +65,26 @@ public class C04IfStatements {
 //        else {
 //            System.out.println("다시입력해주십시오.");
 //        }
-        System.out.println("원하시는 서비스 번호를 입력해주세요.");
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        switch (a) {
-            case 1:
-                System.out.println("대출업무입니다.");
-                break;
-                case 2:
-                    System.out.println("예금업무입니다.");
-                    break;
-                    case 3:
-                        System.out.println("적금업무입니다.");
-                        break;
-                        case 0:
-                            System.out.println("상담사연결입니다.");
-                            break;
-                            default:
-                                System.out.println("다시입력해주십시오");
-                                break;
-        }
+//        System.out.println("원하시는 서비스 번호를 입력해주세요.");
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        switch (a) {
+//            case 1:
+//                System.out.println("대출업무입니다.");
+//                break;
+//                case 2:
+//                    System.out.println("예금업무입니다.");
+//                    break;
+//                    case 3:
+//                        System.out.println("적금업무입니다.");
+//                        break;
+//                        case 0:
+//                            System.out.println("상담사연결입니다.");
+//                            break;
+//                            default:
+//                                System.out.println("다시입력해주십시오");
+//                                break;
+//        }
 
 
     }

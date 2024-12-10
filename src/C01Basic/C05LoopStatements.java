@@ -19,7 +19,7 @@ public class C05LoopStatements {
 //        int b = 2;
 //        while(b<=10){
 //            System.out.println(b);
-//            b=b+1;
+//            b+=1;
 //        }
 //
 ////        입력한 숫자의 구구단 단수 출력
@@ -30,7 +30,7 @@ public class C05LoopStatements {
 //            int d = 1;
 //            while(d<10 && c<=9){
 //            System.out.println(c+" X "+d+" = "+c*d);
-//            d++;
+//            d+=1;
 //            }
 //        }
 //
@@ -73,7 +73,7 @@ public class C05LoopStatements {
 //                }
 //            }
 //
-////        do while문무조건 한번은 실행되는 while문
+////        do while문 : 무조건 한번은 실행되는 while문
 //        int a = 1;
 //        do{
 //            System.out.println(a);
@@ -237,21 +237,21 @@ public class C05LoopStatements {
 //            }
 //        }
 //            100~200까지 수중에서 가장 작은 소수를 출력
-
-        for(int i=100; i<201; i++){
-            boolean end = false;
-            for(int j=2; j<i; j++){
-                if(i%j==0){
-                    end = true;
-                    break;
-                }
-            }
-                if(!end){
-                    System.out.println(i);
-                    break;
-
-            }
-        }
+//
+//        for(int i=100; i<201; i++){
+//            boolean end = false;
+//            for(int j=2; j<i; j++){
+//                if(i%j==0){
+//                    end = true;
+//                    break;
+//                }
+//            }
+//                if(!end){
+//                    System.out.println(i);
+//                    break;
+//
+//            }
+//        }
         }
     }
 
