@@ -45,7 +45,7 @@ public class C0202Class {
 
     }
 }
-class MyCalculator {
+    class MyCalculator {
 //    statix이 붙어있는 변수는 클래스 변수, static이 붙어있지않으면 객체변수
 
     static int total = 0;
@@ -55,7 +55,8 @@ class MyCalculator {
     }
     static void sumAcc(int a){
         total += a;
-    }}
+    }
+}
     class MyCalculatorInstance {
 //    static이 붙어있는 변수는 클래스 변수, static이 붙어있지않으면 객체변수
         static int total_count = 0;

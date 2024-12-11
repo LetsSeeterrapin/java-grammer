@@ -61,25 +61,65 @@ public class C09Map {
 //        }
 //        System.out.println(myMap);
 //
-////        완주하지 못한 선수
-////        ["leo", "kiki", "eden"]	["eden", "kiki"]
-////        ["marina", "josipa", "nikola", "vinko", "filipa"]	["josipa", "filipa", "marina", "nikola"]	"vinko"
-//        String[] arr ={"marina", "josipa", "nikola", "vinko", "filipa"};
-//        String[] arr2 ={"josipa", "filipa", "marina", "nikola"};
-//        Map<String, String> runner = new HashMap<>();
-//        Map<String, String> comp = new HashMap<>();
-//        for(String key : arr) {
-//            runner.put(key, "참가자");
+//        완주하지 못한 선수
+//        ["leo", "kiki", "eden"]	["eden", "kiki"]
+//        ["marina", "josipa", "nikola", "vinko", "filipa"]	["josipa", "filipa", "marina", "nikola"]	"vinko"
+        String[] participant ={"mislav", "stanko", "mislav", "ana"};
+        String[] completion ={"stanko", "ana", "mislav"};
+//        //        -List로 풀기(시간초과)
+//        List<String> participant1 = new ArrayList<>(Arrays.asList(participant));
+//        List<String> completion1 = new ArrayList<>(Arrays.asList(completion));
+//        List<String> answer = new ArrayList<>();
+//        for(int i=0; i<participant1.size(); i++){
+//            if(completion1.contains(participant1.get(i))){
+//                completion1.remove(participant1.get(i));
+//            }else {answer.add(participant1.get(i));
+//            }
 //        }
-//        for(String makey : arr2) {
-//            comp.put(makey, "완주자");
-//        }
-//        System.out.println(comp);
+//        System.out.println(answer);
+//        Map으로 풀기(성공)
+        Map<String, Integer> map = new HashMap<>();
+        for(String p : participant) {
+            map.put(p, map.getOrDefault(p,0)+1);
+        }
+        String answer = "";
+        for(String c : completion) {
+            if(map.containsKey(c)) {
+                if(map.get(c)>1){
+                    map.put(c, map.get(c)-1);
+                }else {
+                    map.remove(c);
+                }
+            }
+        }
+        for(String a : map.keySet()) {
+            answer = a;
+        }
+        System.out.println(answer);
+
+//        의상
+        String[][] clothes = {{"yellow_hat", "headgear"},{"blue_sunglasses", "eyewear"},{"green_turban", "headgear"},
+                {"blue_sunglasses", "face"},{"smoky_makeup", "face"},{"crow_mask", "face"}};
+        Map<String,Integer> myMap = new HashMap<>();
+        for(String[] arr : clothes){
+            myMap.put(arr[1], myMap.getOrDefault(arr[1], 0)+1);
+        }
+        System.out.println(myMap);
+        int answer1 = 1;
+        for(String m : myMap.keySet()) {
+            answer1 *= (myMap.get(m)+1);
+        }
+        answer1-=1;
+        System.out.println(answer1);
+
+
+
+
 
 
 //        treemap
 //          Hash맵을 사용해서 key으로 정렬
-        Map<String, Integer> myMap = new HashMap<>();
+        Map<String, Integer> yMap = new HashMap<>();
         myMap.put("hello5", 1);
         myMap.put("hello4", 2);
         myMap.put("hello3", 3);

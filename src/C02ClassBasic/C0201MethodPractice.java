@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class C0201MethodPractice {
     public static void main(String[] args) {
 
-        if(isPrime(10)){
+        if(isPrime(13)){
             System.out.println("소수가아닙니다");
         }else{
             System.out.println("소수입니다");

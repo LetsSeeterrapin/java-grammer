@@ -1,10 +1,10 @@
 package C01Basic;
 
-import java.util.Arrays;
-import java.util.Comparator;
+import java.io.IOException;
+import java.util.*;
 
 public class C07Array {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 ////        배열 표현식1. 리터럴 방식
 //        int[] intArr1 = {1,3,5,7,9};
 //
@@ -13,14 +13,15 @@ public class C07Array {
 //        intArr2[0] = 1;
 //        intArr2[1] = 3;
 //        intArr2[2] = 5;
-//        intArr2[3] = 7;
-//
+//        intArr2[4] = 7;
+//        System.out.println(Arrays.toString(intArr2));
 //
 ////        참조자료형의 배열은 기본적으로 null초기화
-//        String[] stArr - new String [5];
-//         stArr[0] = "0";
-//         stArr[0] = "0";
+//        String[] stArr = new String [5];
+//         stArr[0] = "1";
+//         stArr[0] = "0"; //0출력
 //         stArr[2] = "0";
+//        System.out.println(Arrays.toString(stArr));
 ////         아래코드는nullpointExeption발생
 //        for(int i = 0; i < stArr.length; i++);
 //
@@ -29,16 +30,19 @@ public class C07Array {
 //        int[] intArr3 = new int[]{1,3,5,7,9};
 //        List<int[]> list1 = new ArrayList<>();
 //        list1.add(new int[]{1,2,3,4,5});
+//        System.out.println(Arrays.toString(intArr3)); //입력된 배열 출력
+//        System.out.println(list1);                    //주소 출력
+//
 //
 ////        표현식4 : 불가 -> 배열의 길이가 사전지정되어야함
-//        int[] intArr4 = new int[];
-//
-//        String[] stArr = new String[5];
-//        for(int i=0; i<=stArr.length; i++){
-//            stArr[i] = ""+i;
-//        }
-//        Arrays.fill(stArr, "hello");
-//        System.out.println(Arrays.toString(stArr));
+//        int[] intArr4 = new int[]; // 배열의 길이 미지정으로 에러*
+
+        String[] stArr = new String[5];
+        for(int i=999999999; i<=stArr.length-1; i++){
+            stArr[i] = ""+i;
+        }
+        Arrays.fill(stArr, "hello");
+        System.out.println(Arrays.toString(stArr));
 
 //        85,65,90 인 int 배열을 선언하고, 총합, 평균을 구하자.
 //        int[] Arr2 = {80,65,90};
@@ -264,25 +268,25 @@ public class C07Array {
 //                num++;
 //            }
 //        }
-//        행렬의 덧셈 프로그래머스
-        int[][] arr1 = new int[2][2];
-        int[][] arr2 = new int[2][2];
-        arr1[0][0] = 1;
-        arr1[0][1] = 2;
-        arr1[1][0] = 2;
-        arr1[1][1] = 3;
-        arr2[0][0] = 3;
-        arr2[0][1] = 4;
-        arr2[1][0] = 5;
-        arr2[1][1] = 6;
-        int[][] answer = new int[2][2];
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = 0; j < arr1[i].length; j++) {
-                answer[i][j] = arr1[i][j] + arr2[i][j];
-            }
-        }
-        System.out.println(Arrays.deepToString(answer));
-
+////        행렬의 덧셈 프로그래머스
+//        int[][] arr1 = new int[2][2];
+//        int[][] arr2 = new int[2][2];
+//        arr1[0][0] = 1;
+//        arr1[0][1] = 2;
+//        arr1[1][0] = 2;
+//        arr1[1][1] = 3;
+//        arr2[0][0] = 3;
+//        arr2[0][1] = 4;
+//        arr2[1][0] = 5;
+//        arr2[1][1] = 6;
+//        int[][] answer = new int[2][2];
+//        for (int i = 0; i < arr1.length; i++) {
+//            for (int j = 0; j < arr1[i].length; j++) {
+//                answer[i][j] = arr1[i][j] + arr2[i][j];
+//            }
+//        }
+//        System.out.println(Arrays.deepToString(answer));
+//
 
     }
 }
