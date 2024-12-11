@@ -34,6 +34,7 @@ public class C0202Class {
         m2.sumAcc(30);
         m2.sumAcc(40);
         System.out.println(m2.total);
+        System.out.println(MyCalculatorInstance.total_count);
 
 //        이름세팅,eating()메서드 호출
         C0202Person p1 = new C0202Person();
@@ -46,7 +47,7 @@ public class C0202Class {
     }
 }
     class MyCalculator {
-//    statix이 붙어있는 변수는 클래스 변수, static이 붙어있지않으면 객체변수
+//    static이 붙어있는 변수는 클래스 변수, static이 붙어있지않으면 객체변수
 
     static int total = 0;
 
@@ -66,6 +67,7 @@ public class C0202Class {
         void sumAcc(int a){
 //            this는 객체 그 자신을 의미
 //            예를들어 m1객체일 경우 m1.total, m2객체일 경울 m2.total
+//            일반적으로, 매개변수와 객체변수를 구분짓기 위해 사용해야함.(생략가능-매개변수와 이름이 같지않을 경우)
             total += a;
         }
 }
