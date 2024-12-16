@@ -100,19 +100,20 @@ public class C08List {
 //
 ////        이중리스트 : 리스트안에 리스트
 ////        {{1,2,3}, {10,20}, {100,200,300,400}}
-//        List<List<Integer>> myList = new ArrayList<>();
-//        myList.add(new ArrayList<>());
-//        myList.add(new ArrayList<>());
-//        myList.add(new ArrayList<>());
-//        myList.get(0).add(1);
-//        myList.get(0).add(2);
-//        myList.get(0).add(3);
-//        myList.get(1).add(10);
-//        myList.get(1).add(20);
-//        myList.get(2).add(100);
-//        myList.get(2).add(200);
-//        myList.get(2).add(300);
-//        myList.get(2).add(400);
+        List<List<Integer>> myList = new ArrayList<>();
+        myList.add(new ArrayList<>());
+        myList.add(new ArrayList<>());
+        myList.add(new ArrayList<>());
+        myList.get(0).add(1);
+        myList.get(0).add(2);
+        myList.get(0).add(3);
+        myList.get(1).add(10);
+        myList.get(1).add(20);
+        myList.get(2).add(100);
+        myList.get(2).add(200);
+        myList.get(2).add(300);
+        myList.get(2).add(400);
+        System.out.println(myList.get(0));
 //
 ////        리스트안에 배열
 //        List<int[]> myList2 = new ArrayList<>();
@@ -130,13 +131,13 @@ public class C08List {
 //        }
 //
 //        contains : 값이 있는지 여부를 리턴
-        List<Integer> myList = new ArrayList<>();
-        myList.add(10);
-        myList.add(20);
-        myList.add(30);
-        if(myList.contains(10)){
-            System.out.println("10이 있습니다");
-        }
+//        List<Integer> myList = new ArrayList<>();
+//        myList.add(10);
+//        myList.add(20);
+//        myList.add(30);
+//        if(myList.contains(10)){
+//            System.out.println("10이 있습니다");
+//        }
 
 
 

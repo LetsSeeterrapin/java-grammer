@@ -25,7 +25,7 @@ class Calender{
         this.month = month;
         this.day = day;
     }
-//    병도의 생성자를 만들경우, 초기(기본)생성자는 더이상 사용할 수 없으므로, 별도 추가 필요.
+//    별도의 생성자를 만들경우, 초기(기본)생성자는 더이상 사용할 수 없으므로, 별도 추가 필요.
     public Calender() {
 
     }

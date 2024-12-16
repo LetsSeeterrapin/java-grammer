@@ -28,7 +28,7 @@ public class C0202Class {
         MyCalculatorInstance.total_count += 1;
         m1.sumAcc(10);
         m1.sumAcc(20);
-        System.out.println(m1.total);
+        System.out.println(m1.total); //30출력
         MyCalculatorInstance m2 = new MyCalculatorInstance();
         MyCalculatorInstance.total_count += 1;
         m2.sumAcc(30);

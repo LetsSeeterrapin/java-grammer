@@ -1,14 +1,12 @@
-//package C01Basic;
-//
-//import java.io.BufferedReader;
-//import java.io.IOException;
-//import java.io.InputStreamReader;
-//import java.util.Arrays;
-//import java.util.Scanner;
-//import java.util.StringTokenizer;
-//
-//public class C05LoopStatements {
-//    public static void main(String[] args) throws IOException {
+package C01Basic;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
+public class C05LoopStatements {
+    public static void main(String[] args) throws IOException {
 //        int a = 0;
 //        while(a<10){
 //            System.out.println("hello world");
@@ -196,13 +194,18 @@
 //
 ////        다중 반복문
 ////        2~9단까지 출력
+//        for(int i=2; i<10; i++){
+//            System.out.println(i+"단 입니다");
+//            for(int j=1; j<10; j++){
+//                System.out.println(i+"X"+j+"="+i*j);
+//            }
+//        }
 //            for(int i=2; i<10; i++){
 //                for(int j=0; j<10; j++){
 //                    System.out.println("hello world");
 //                }
 //                System.out.println(i+"단 입니다");
 //            }
-//
 ////            라벨문 : 반복문에 이름을 붙이는 것.
 //        for(int i=0; i<5; i++){
 //            for(int j=0; j<5; j++){
@@ -213,9 +216,57 @@
 //            }
 //        }
 //
-//        int[][] arr = {{1,2,3}, {4, 5, 11}, {7, 8, 9}, {10, 11, 12}};
+        int[][] arr = {{1,2,3}, {4, 5, 11}, {7, 8, 11}, {10, 11, 12}};
 ////        숫자 8을 찾아서 2,1에 있다고 출력
 ////        숫자 11을 찾되, 가장 먼저 찾아지는 11의 위치만 출력
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if(arr[i][j] == 8){
+                    System.out.println(i+","+j);
+                }
+            }
+        }
+        loop1:
+        for(int[] a : arr){
+                if(a = 11){
+                    System.out.println(a);
+                    break loop1;
+                }
+
+        }
+        List<int[]> temp = new ArrayList<>();
+        loop1:
+        for(int i=0;i<arr.length;i++){
+            loop2:
+            for(int j=0;j<arr[i].length;j++){
+                if(arr[i][j] == 11){
+                    System.out.println(i+","+j);
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //        for(int i=0; i<4; i++){
 //            for(int j=0; j<3; j++){
 //                if(arr[i][j] == 8){
@@ -252,6 +303,6 @@
 //
 //            }
 //        }
-//        }
-//    }
-//
+        }
+    }
+

@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class C0206ClassPractice {
     public static void main(String[] args) {
-        List<Account> accounts = new ArrayList<Account>();
+        List<Account> accounts = new ArrayList<>();
         Account a1 = new Account("111111",100000);
         Account a2 = new Account("222222",200000);
         accounts.add(a1);
@@ -34,15 +34,6 @@ public class C0206ClassPractice {
 //        Map을 자료구조로 사용시
         Map<String, Account> map = new HashMap<String, Account>();
 
-
-
-
-
-
-
-
-
-
     }
 }
 class Account{
@@ -57,11 +48,9 @@ class Account{
     public String getAcNumber() {
         return acNumber;
     }
-
     public int getBalance() {
         return balance;
     }
-
     public void setBalance(int i) {
     }
 }
