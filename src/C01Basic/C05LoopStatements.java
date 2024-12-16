@@ -216,64 +216,27 @@ public class C05LoopStatements {
 //            }
 //        }
 //
-        int[][] arr = {{1,2,3}, {4, 5, 11}, {7, 8, 11}, {10, 11, 12}};
+//        int[][] arr = {{1,2,3}, {4, 5, 11}, {7, 8, 11}, {10, 11, 12}};
 ////        숫자 8을 찾아서 2,1에 있다고 출력
 ////        숫자 11을 찾되, 가장 먼저 찾아지는 11의 위치만 출력
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                if(arr[i][j] == 8){
-                    System.out.println(i+","+j);
-                }
-            }
-        }
-        loop1:
-        for(int[] a : arr){
-                if(a = 11){
-                    System.out.println(a);
-                    break loop1;
-                }
-
-        }
-        List<int[]> temp = new ArrayList<>();
-        loop1:
-        for(int i=0;i<arr.length;i++){
-            loop2:
-            for(int j=0;j<arr[i].length;j++){
-                if(arr[i][j] == 11){
-                    System.out.println(i+","+j);
-                }
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        for(int i=0; i<4; i++){
-//            for(int j=0; j<3; j++){
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < arr[i].length; j++) {
 //                if(arr[i][j] == 8){
-//                    System.out.println(i+" , "+j+"에 있습니다");
+//                    System.out.println(i+","+j+"에 있습니다");
 //                }
 //            }
 //        }
+//        라벨문
+//        loop1:
+//        for(int i=0;i<arr.length;i++){
+//            loop2:
+//            for(int j=0;j<arr[i].length;j++){
+//                if(arr[i][j] == 11){
+//                    System.out.println(i+","+j);
+//                }
+//            }
+//        }
+//
 //        boolean end = false;
 //        loop1:
 //        for(int i=0; i<4; i++){
@@ -288,6 +251,18 @@ public class C05LoopStatements {
 //            }
 //        }
 //            100~200까지 수중에서 가장 작은 소수를 출력
+//            for(int i = 100; i<201; i++){
+//                boolean b = true;
+//                for(int j=2; j < i; j++){
+//                    if(i%j ==0){
+//                        b = false;
+//                    }
+//                }
+//                if (b == true){
+//                    System.out.println(i);
+//                    break;
+//                }
+//            }
 //
 //        for(int i=100; i<201; i++){
 //            boolean end = false;

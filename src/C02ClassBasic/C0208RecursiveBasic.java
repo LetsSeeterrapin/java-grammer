@@ -1,7 +1,7 @@
-//package C02ClassBasic;
-//
-//public class C0208RecursiveBasic {
-//    public static void main(String[] args) {
+package C02ClassBasic;
+
+public class C0208RecursiveBasic {
+    public static void main(String[] args) {
 ////        for문으로 1~10까지 누적합계
 //        int total = 0;
 //        for (int i = 1; i <= 10; i++) {
@@ -59,5 +59,5 @@
 //        }
 //        return n + sumAcc(n - 1);
 //
-//    }
-//}
+    }
+}
