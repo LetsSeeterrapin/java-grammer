@@ -1,5 +1,5 @@
 package C03Inheritance;
-
+//중요
 public class C0303MethodOverriding {
     public static void main(String[] args) {
         Dog d1 = new Dog();

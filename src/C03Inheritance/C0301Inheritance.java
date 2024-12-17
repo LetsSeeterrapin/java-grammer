@@ -1,5 +1,5 @@
 package C03Inheritance;
-
+//중요
 
 public class C0301Inheritance extends Parents{
     int c = 10;
